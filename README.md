@@ -1,124 +1,53 @@
 🚀 Job Portal with AI Features
 
-A simple full-stack Job Portal web application built using React (Frontend) and Spring Boot (Backend) with basic AI features like skill extraction and job matching.
+A simple full-stack Job Portal web application built using React (Vite) and Spring Boot with basic AI features for smart job matching.
 
 📌 Features
 👨‍💼 Job Seeker
-Register and Login
-View available jobs
+Register / Login
+View and search jobs
 Apply to jobs
-View applied jobs
-Upload resume text
+Save jobs
+View applications
+Dashboard (basic stats)
 🧑‍💻 Recruiter
-Register and Login
-Post new jobs
+Register / Login
+Post, edit, delete jobs
 View applicants
-Manage job postings
-🤖 AI Features (Simple)
-Extract skills from resume text using AI
-Match jobs based on skills
-Show simple match percentage
-🛠️ Tech Stack
-Frontend
-React.js (Vite)
-Tailwind CSS
-Axios
-Backend
-Java 21
-Spring Boot 3
-Spring Security (JWT)
-Spring Data JPA
-Maven
-Database
-PostgreSQL
-AI Integration
-OpenAI API (for skill extraction)
-📁 Project Structure
-frontend/
-  ├── src/
-  │   ├── pages/
-  │   ├── components/
-  │   ├── services/
-  │   └── App.tsx
+Manage applications
+🤖 AI Features
+Extract skills from resume text (OpenAI API)
+Job match percentage based on skills
+Basic interview question generator
+🛠 Tech Stack
 
-backend/
-  ├── src/main/java/
-  │   ├── controller/
-  │   ├── service/
-  │   ├── repository/
-  │   ├── model/
-  │   └── config/
-🗄️ Database Schema
-Users
-id
-name
-email
-password
-role
-Jobs
-id
-title
-description
-skills
-Applications
-id
-userId
-jobId
-status
-Resumes
-id
-userId
-text
-extractedSkills
+Frontend: React.js, Vite, Tailwind CSS, Axios
+Backend: Java 21, Spring Boot 3, Spring Security (JWT), JPA, Maven
+Database: PostgreSQL
+AI: OpenAI API
+
 🔐 Authentication
-JWT-based authentication
-Role-based access control (JOB_SEEKER, RECRUITER)
-Secure password hashing using BCrypt
-⚙️ API Endpoints (Sample)
-Auth
-POST /api/auth/register
-POST /api/auth/login
+JWT-based login system
+Role-based access (JOB_SEEKER, RECRUITER)
+🗄️ Database (Simple)
+Users
 Jobs
-GET /api/jobs
-POST /api/jobs
-DELETE /api/jobs/{id}
 Applications
-POST /api/apply
-GET /api/applications/user/{id}
-🤖 AI Flow
-User uploads resume text
-Backend sends text to OpenAI API
-Extracted skills are stored in database
-Jobs are matched based on skill similarity
-Match percentage is shown to user
-🚀 How to Run
+Resumes
+🚀 Deployment
+Frontend: Netlify
+Backend: Render / Railway
+Database: Neon / Supabase PostgreSQL
+▶️ Run Project
+
 Backend
-cd backend
+
 mvn spring-boot:run
+
 Frontend
-cd frontend
+
 npm install
 npm run dev
-🌐 Deployment
-Frontend: Netlify
-Backend: Render
-Database: PostgreSQL (Neon / Supabase)
-📸 Screenshots
-
-(Add screenshots here after development)
-
 🎯 Goal
 
-This project is designed to demonstrate:
-
-Full-stack development skills
-REST API design
-Authentication & security
-Basic AI integration
-Real-world job portal logic
-📌 Future Improvements
-Advanced AI recommendations
-Email notifications
-Resume file upload (PDF parsing)
-Admin dashboard
-Real-time chat between recruiter and candidate
+A clean, beginner-friendly full-stack project showing React, Spring Boot, authentication, and basic AI integration.
