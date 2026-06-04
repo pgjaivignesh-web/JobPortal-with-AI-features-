@@ -1,4 +1,4 @@
-🚀 Job Portal with AI Features
+🚀 *Job Portal with AI Features*
 
 A simple full-stack Job Portal web application built using React (Vite) and Spring Boot with basic AI features for smart job matching.
 
